@@ -3,6 +3,10 @@ const compra = require('./compraRoute')
 const enderecos = require('./enderecosRoute')
 const produtos = require('./produtosRoute')
 const produtosCompra = require('./produtosCompraRoute')
+const setores = require('./setoresRoute')
+const unidadesMedida = require('./unidadesMedidaRoute')
+const vendedores = require('./vendedoresRoute')
+const produtosDaCompra = require('./produtosDaCompraRoute')
 
 module.exports = (app) => {
     clientes(app)
@@ -10,4 +14,8 @@ module.exports = (app) => {
     enderecos(app)
     produtos(app)
     produtosCompra(app)
+    setores(app)
+    unidadesMedida(app)
+    vendedores(app)
+    produtosDaCompra(app)
 } 
